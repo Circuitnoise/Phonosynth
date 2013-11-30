@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.1</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>{f9268c90-3a34-4463-b527-3f8a64160c67}</ProjectGuid>
+    <avrdevice>ATmega328P</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>PhonosynthArduino</AssemblyName>
+    <Name>PhonosynthArduino328</Name>
+    <RootNamespace>PhonosynthArduino</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue />
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>2</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.8.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.simulator</avrtool>
+    <avrtoolinterface />
+    <com_atmel_avrdbg_tool_simulator>
+      <ToolType xmlns="">com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolName xmlns="">Simulator</ToolName>
+      <ToolNumber xmlns="">
+      </ToolNumber>
+      <StimuliFile xmlns="">
+      </StimuliFile>
+      <Channel xmlns="">
+        <host>127.0.0.1</host>
+        <port>57390</port>
+        <ssl>False</ssl>
+      </Channel>
+    </com_atmel_avrdbg_tool_simulator>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+      <Value>F_CPU=8000000L</Value>
+      <Value>ARDUINO=105</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:\Users\Circuitnoise\Documents\Dropbox\PhonosynthArduino328\PhonosynthArduino\libArduino</Value>
+      <Value>../Libmozzi</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.miscellaneous.Verbose>True</avrgcc.compiler.miscellaneous.Verbose>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+      <Value>F_CPU=8000000L</Value>
+      <Value>ARDUINO=105</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:\Users\Circuitnoise\Documents\Dropbox\PhonosynthArduino328\PhonosynthArduino\libArduino</Value>
+      <Value>../Libmozzi</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.miscellaneous.Verbose>True</avrgcccpp.compiler.miscellaneous.Verbose>
+  <avrgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+      <Value>libcore.a</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.Libraries>
+  <avrgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>C:\Users\Circuitnoise\Documents\Dropbox\PhonosynthArduino328\PhonosynthArduino\libArduino</Value>
+      <Value>../Libmozzi</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.LibrarySearchPaths>
+  <avrgcccpp.linker.memorysettings.Comment>&lt;segmentname&gt;=&lt;address&gt;, for example  .boot=0xff</avrgcccpp.linker.memorysettings.Comment>
+  <avrgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>C:\Users\Circuitnoise\Documents\Dropbox\ArduinoCore\ArduinoCore\Release</Value>
+    </ListValues>
+  </avrgcccpp.assembler.general.IncludePaths>
+</AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </avrgcccpp.compiler.symbols.DefSymbols>
+        <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+        <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+        <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+        <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+        <avrgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.Libraries>
+        <avrgcccpp.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>C:\Users\Circuitnoise\Documents\Dropbox\ArduinoCore\ArduinoCore</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.LibrarySearchPaths>
+        <avrgcccpp.linker.memorysettings.Comment>&lt;segmentname&gt;=&lt;address&gt;, for example  .boot=0xff</avrgcccpp.linker.memorysettings.Comment>
+        <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+      </AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Libmozzi\ADSR.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\AudioConfigHiSpeed14bitPwm.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\AudioConfigStandard9bitPwm.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\AudioDelay.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\AudioDelayFeedback.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\AutoMap.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\AutoRange.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\cogl_sqrti.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\config\known_16bit_timers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\ControlDelay.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\DCfilter.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\Ead.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\EventDelay.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\FrequencyTimer2.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\FrequencyTimer2.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\IntMap.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\Line.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\LowPassFilter.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\meta.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\Metronome.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\MozziGuts.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\MozziGuts.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mozzi_analog.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mozzi_analog.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mozzi_config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mozzi_fixmath.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mozzi_fixmath.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mozzi_midi.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mozzi_midi.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mozzi_rand.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mozzi_rand.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mozzi_utils.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mozzi_utils.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mult16x16.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mult16x8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\mult32x16.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\Oscil.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\OverSample.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\Phasor.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\Portamento.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\primes.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\ReverbTank.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\RollingAverage.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\RollingStat.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\Sample.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\SampleHuffman.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\samples\a-bomb-huffman.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\samples\abomb16384_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\samples\burroughs1_18649_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\samples\empty_0_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\samples\raven_arh_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\Smooth.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\Stack.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\StateVariable.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\brownnoise8192_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\chum78_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\chum9_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\cos1024_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\cos2048_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\cos256_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\cos4096_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\cos512_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\cos8192_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\cosphase2048_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\cosphase256_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\cosphase8192_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\envelop2048_uint8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\halfsin256_uint8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\halfsinwindow512_uint8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\noise_static_1_16384_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\phasor256_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\pinknoise256_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\pinknoise8192_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\saw1024_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\saw2048_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\saw256_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\saw4096_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\saw512_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\saw8192_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\saw_analogue512_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\sin1024_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\sin1024_uint8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\sin2048_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\sin256_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\sin4096_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\sin512_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\sin8192_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\sin8192_uint8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\sintest_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\smoothsquare8192_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\square_analogue512_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\square_no_alias512_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\triangle1024_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\triangle2048_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\triangle512_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\triangle_analogue512_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\triangle_dist_cubed_2048_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\triangle_dist_squared_2048_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\triangle_hermes_2048_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\triangle_valve_2048_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\triangle_valve_2_2048_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\triangle_warm8192_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\uphasor256_uint8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\waveshape1_softclip_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\waveshape2_softerclip_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\waveshape_chebyshev_3rd_256_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\waveshape_chebyshev_4th_256_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\waveshape_chebyshev_5th_256_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\waveshape_chebyshev_6th_256_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\waveshape_compress_512_to_488_int16.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\waveshape_sigmoid_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\waveshape_tanh_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\whitenoise256_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\tables\whitenoise8192_int8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\TimerOne.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\TimerOne.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\TimerZero.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\TimerZero.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\WavePacket.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\WavePacketSample.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Libmozzi\WaveShaper.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="PhonosynthArduino.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Libmozzi" />
+    <Folder Include="Libmozzi\config" />
+    <Folder Include="Libmozzi\samples\" />
+    <Folder Include="Libmozzi\tables" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
